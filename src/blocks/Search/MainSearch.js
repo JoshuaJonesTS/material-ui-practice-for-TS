@@ -38,13 +38,31 @@ function MainSearch() {
 
     return (
         <div>
-            <div className='e-btn-group'>
-                <input type="radio" id="radioleft" name="align" value="left"/>
-                <label className="e-btn" htmlFor="radioleft">Left</label>
-                <input type="radio" id="radiomiddle" name="align" value="middle"/>
-                <label className="e-btn" htmlFor="radiomiddle">Center</label>
-                <input type="radio" id="radioright" name="align" value="right"/>
-                <label className="e-btn" htmlFor="radioright">Right</label>
+            <input type="text" onChange={e => setTerm(e.target.value)}></input>
+            <div>
+                {/* Name */}
+                <input 
+                    type="radio" 
+                    id="name" 
+                    name="align" 
+                />
+                <label htmlFor="radioleft">Name</label>
+
+                {/* Type */}
+                <input 
+                    type="radio" 
+                    id="type" 
+                    name="align" 
+                />
+                <label htmlFor="type">Type</label>
+
+                {/* Environment */}
+                <input 
+                    type="radio" 
+                    id="environment" 
+                    name="align" 
+                />
+                <label htmlFor="environmen">Environment</label>
             </div>
           
             
