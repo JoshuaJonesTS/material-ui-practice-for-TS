@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 function MainSearch() {
     const [term, setTerm] = useState('default');
+    const [nameSelected, setNameSelected] = useState(false);
+    const [typeSelected, setTypeSelected] = useState(false);
+    const [envSelected, setEnvSelected] = useState(false);
     
     let animals = [
         {
@@ -31,11 +34,52 @@ function MainSearch() {
         // console.log(name);
     });
 
-    console.log(term);
+    console.log(nameSelected);
 
     return (
         <div>
             <input type="text" onChange={e => setTerm(e.target.value)}></input>
+            <div>
+                {/* Name */}
+                <input 
+                type="radio" 
+                id="name" 
+                name="name"
+                onChange={() => {
+                    setNameSelected(true);
+                    setTypeSelected(false);
+                    setEnvSelected(false);
+                }}
+                />
+                <label for="name">Name</label><br></br>
+
+                {/* Type */}
+                <input 
+                type="radio" 
+                id="type" 
+                name="type"
+                onChange={() => {
+                    setNameSelected(false);
+                    setTypeSelected(true);
+                    setEnvSelected(false);
+                }}
+                />
+                <label for="type">Type</label><br></br>
+
+                {/* Environment */}
+                <input 
+                type="radio" 
+                id="environment" 
+                name="environment"
+                onChange={() => {
+                    setNameSelected(false);
+                    setTypeSelected(false);
+                    setEnvSelected(true);
+                }}
+                />
+                <label for="environment">Environment</label><br></br>
+            </div>
+            
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
             get the “age” value inside of the object) */}
