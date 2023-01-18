@@ -24,11 +24,11 @@ function MainSearch() {
     // 1) Loop through the list of objects and do the following on each object:
     let animalName = [];
     animals.forEach(animal => {
-        animalName.push([animal.name]);
+        // animalName.push([animal.name]);
     });
     
     animalName.forEach(name => {
-        console.log(name);
+        // console.log(name);
     });
 
     console.log(term);
