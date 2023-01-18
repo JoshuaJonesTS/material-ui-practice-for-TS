@@ -6,8 +6,7 @@ function MainForm() {
 
     return (
         <div>
-            <p> You clicked {term}</p>
-            <MainButton oncClick={() => setTerm('dolphin')}></MainButton>
+            
         </div>
     );
 }
