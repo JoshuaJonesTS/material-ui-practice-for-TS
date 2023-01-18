@@ -44,7 +44,12 @@ function MainSearch() {
                 <input 
                     type="radio" 
                     id="name" 
-                    name="align" 
+                    name="align"
+                    onChange={() => {
+                        setNameSelected(true);
+                        setTypeSelected(false);
+                        setEnvSelected(false);
+                    }} 
                 />
                 <label htmlFor="radioleft">Name</label>
 
@@ -53,6 +58,11 @@ function MainSearch() {
                     type="radio" 
                     id="type" 
                     name="align" 
+                    onChange={() => {
+                        setNameSelected(false);
+                        setTypeSelected(true);
+                        setEnvSelected(false);
+                    }} 
                 />
                 <label htmlFor="type">Type</label>
 
@@ -61,6 +71,11 @@ function MainSearch() {
                     type="radio" 
                     id="environment" 
                     name="align" 
+                    onChange={() => {
+                        setNameSelected(false);
+                        setTypeSelected(false);
+                        setEnvSelected(true);
+                    }} 
                 />
                 <label htmlFor="environmen">Environment</label>
             </div>
