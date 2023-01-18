@@ -5,9 +5,9 @@ import MainForm from "./collections/Form/MainForm";
 function App() {
   return (
     <div className="App">
-      <MainTextField></MainTextField>
+      {/* <MainTextField></MainTextField>
       <MainButton></MainButton>
-      <MainForm></MainForm>
+      <MainForm></MainForm> */}
     </div>
   );
 }
