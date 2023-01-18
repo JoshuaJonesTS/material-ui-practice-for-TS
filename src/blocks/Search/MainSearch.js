@@ -1,5 +1,23 @@
 function MainSearch() {
-    let animal = [];
+    let animal = [
+        {
+            dolphin: {
+                name: 'dolphin',
+                type: 'mammal',
+                environment: 'ocean'
+            },
+            wolf: {
+                name: 'wolf',
+                type: 'mammal',
+                environment: 'temperate forest'
+            },
+            toucan: {
+                name: 'toucan',
+                type: 'bird',
+                environment: 'tropical rainforest'
+            },
+        }
+    ];
     // 1) Loop through the list of objects and do the following on each object:
 
     // 1.1) Retrieve the value inside of the object that corresponds with the Search
