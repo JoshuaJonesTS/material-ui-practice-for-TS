@@ -16,10 +16,10 @@ function MainSearch() {
             environment: 'tropical rainforest'
         }
     ];
-    
+
     // 1) Loop through the list of objects and do the following on each object:
     animals.forEach(animal => {
-     console.log(animal)
+     console.log(animal.name)
     });
 
     // 1.1) Retrieve the value inside of the object that corresponds with the Search
