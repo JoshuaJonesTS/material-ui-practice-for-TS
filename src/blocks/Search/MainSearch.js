@@ -18,8 +18,13 @@ function MainSearch() {
     ];
 
     // 1) Loop through the list of objects and do the following on each object:
+    let animalName = [];
     animals.forEach(animal => {
-     console.log(animal.name)
+        animalName.push([animal.name]);
+    });
+    
+    animalName.forEach(name => {
+        console.log(name);
     });
 
     // 1.1) Retrieve the value inside of the object that corresponds with the Search
