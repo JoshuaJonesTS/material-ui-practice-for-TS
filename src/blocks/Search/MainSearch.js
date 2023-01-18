@@ -1,24 +1,26 @@
 function MainSearch() {
-    let animal = [
+    let animals = [
         {
-            dolphin: {
-                name: 'dolphin',
-                type: 'mammal',
-                environment: 'ocean'
-            },
-            wolf: {
-                name: 'wolf',
-                type: 'mammal',
-                environment: 'temperate forest'
-            },
-            toucan: {
-                name: 'toucan',
-                type: 'bird',
-                environment: 'tropical rainforest'
-            },
+            name: 'dolphin',
+            type: 'mammal',
+            environment: 'ocean'
+        }, 
+        {
+            name: 'wolf',
+            type: 'mammal',
+            environment: 'temperate forest'
+        },
+        {
+            name: 'toucan',
+            type: 'bird',
+            environment: 'tropical rainforest'
         }
     ];
+    
     // 1) Loop through the list of objects and do the following on each object:
+    animals.forEach(animal => {
+     console.log(animal)
+    });
 
     // 1.1) Retrieve the value inside of the object that corresponds with the Search
     // Field specified by the user. (For example, if the search field is “age”, then
