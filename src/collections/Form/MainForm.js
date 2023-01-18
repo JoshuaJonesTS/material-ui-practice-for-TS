@@ -7,7 +7,7 @@ function MainForm() {
     return (
         <div>
             <h1>An animal that lives in the sea is {term}!</h1>
-            <button onClick={() => setTerm('dolphin')}>Button</button>
+            <MainButton onClick={() => setTerm('dolphin')}></MainButton>
         </div>
     );
 }
