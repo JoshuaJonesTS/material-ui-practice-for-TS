@@ -1,4 +1,4 @@
-import MainButton from "./blocks/Button/Button";
+import MainButton from "./blocks/Button/MainButton";
 
 function App() {
   return (
