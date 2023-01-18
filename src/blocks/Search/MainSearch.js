@@ -38,7 +38,6 @@ function MainSearch() {
 
     return (
         <div>
-            <input type="text" onChange={e => setTerm(e.target.value)}></input>
             <div>
                 {/* Name */}
                 <input 
@@ -79,6 +78,7 @@ function MainSearch() {
                 />
                 <label htmlFor="environmen">Environment</label>
             </div>
+            <input type="text" onChange={e => setTerm(e.target.value)}></input>
           
             
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
