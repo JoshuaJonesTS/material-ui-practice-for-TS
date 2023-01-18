@@ -1,4 +1,5 @@
 function MainSearch() {
+    let animal = [];
     // 1) Loop through the list of objects and do the following on each object:
 
     // 1.1) Retrieve the value inside of the object that corresponds with the Search
