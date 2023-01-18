@@ -38,47 +38,15 @@ function MainSearch() {
 
     return (
         <div>
-            <input type="text" onChange={e => setTerm(e.target.value)}></input>
-            <div>
-                {/* Name */}
-                <input 
-                type="radio" 
-                id="name" 
-                name="name"
-                onChange={() => {
-                    setNameSelected(true);
-                    setTypeSelected(false);
-                    setEnvSelected(false);
-                }}
-                />
-                <label for="name">Name</label><br></br>
-
-                {/* Type */}
-                <input 
-                type="radio" 
-                id="type" 
-                name="type"
-                onChange={() => {
-                    setNameSelected(false);
-                    setTypeSelected(true);
-                    setEnvSelected(false);
-                }}
-                />
-                <label for="type">Type</label><br></br>
-
-                {/* Environment */}
-                <input 
-                type="radio" 
-                id="environment" 
-                name="environment"
-                onChange={() => {
-                    setNameSelected(false);
-                    setTypeSelected(false);
-                    setEnvSelected(true);
-                }}
-                />
-                <label for="environment">Environment</label><br></br>
+            <div className='e-btn-group'>
+                <input type="radio" id="radioleft" name="align" value="left"/>
+                <label className="e-btn" htmlFor="radioleft">Left</label>
+                <input type="radio" id="radiomiddle" name="align" value="middle"/>
+                <label className="e-btn" htmlFor="radiomiddle">Center</label>
+                <input type="radio" id="radioright" name="align" value="right"/>
+                <label className="e-btn" htmlFor="radioright">Right</label>
             </div>
+          
             
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
