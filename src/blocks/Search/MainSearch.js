@@ -34,7 +34,15 @@ function MainSearch() {
         // console.log(name);
     });
 
-    console.log(nameSelected);
+    console.log(term);
+
+    const onSearchChange = (event) => {
+        const searchField = event.target.value;
+        
+        setTerm(() => {
+            return {searchField};
+        });
+    }
 
     return (
         <div>
@@ -78,8 +86,12 @@ function MainSearch() {
                 />
                 <label htmlFor="environmen">Environment</label>
             </div>
-            <input type="text" onChange={e => setTerm(e.target.value)}></input>
-          
+            <input 
+                type="text" 
+                onChange={e => setTerm(e.target.value.toLowerCase())}
+                onChangeHandler={onSearchChange}
+            >
+            </input>
             
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
