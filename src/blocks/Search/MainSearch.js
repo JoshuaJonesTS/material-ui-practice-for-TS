@@ -1,4 +1,8 @@
+import {useHook} from 'react';
+
 function MainSearch() {
+    const [term, setTerm] = useHook('');
+    
     let animals = [
         {
             name: 'dolphin',
@@ -27,9 +31,11 @@ function MainSearch() {
         console.log(name);
     });
 
+    console.log(term);
+
     return (
         <div>
-            <input type="text"></input>
+            <input type="text" onChange={e => {setTerm(e.target.value)}}></input>
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
             get the “age” value inside of the object) */}
