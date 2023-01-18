@@ -35,7 +35,7 @@ function MainSearch() {
 
     return (
         <div>
-            <input type="text" onChange={() => console.log("12345")}></input>
+            <input type="text" onChange={e => setTerm(e.target.value)}></input>
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
             get the “age” value inside of the object) */}
