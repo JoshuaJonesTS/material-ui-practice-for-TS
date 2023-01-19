@@ -92,6 +92,12 @@ function MainSearch() {
                 onChangeHandler={onSearchChange}
             >
             </input>
+            {/* class based component */}
+            {
+                // if(nameSelected) {
+
+                // }
+            }
             
             {/* 1.1) Retrieve the value inside of the object that corresponds with the Search
             Field specified by the user. (For example, if the search field is “age”, then
